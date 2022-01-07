@@ -1,0 +1,23 @@
+.product-list {
+  width: 60vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  @include breakpoint-down(medium) {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80vw;
+  }
+  @include breakpoint-down(small) {
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+  }
+  margin-top: 2rem;
+  grid-gap: 2rem 3rem;
+}
+
+.product-item {
+  img {
+    width: 100%;
+  }
+}

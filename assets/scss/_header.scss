@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  padding: 0.25rem 1rem;
+  img {
+    width: 12.5rem;
+  }
+}
+
+.navbar {
+  a {
+    font-size: 0.775rem;
+    padding: 0.125rem 1.125rem;
+    text-decoration: none;
+    color: rgb(2, 0, 0);
+  }
+}

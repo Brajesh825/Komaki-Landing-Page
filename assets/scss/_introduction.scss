@@ -1,0 +1,22 @@
+.introduction {
+  background: linear-gradient(120deg, #e3e3e3 58%, #e33d3d 28%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  h3 {
+    font-size: 30px;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    font-weight: 700;
+  }
+  p {
+    padding: 0.25rem;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  img {
+    height: 50vh;
+  }
+}
