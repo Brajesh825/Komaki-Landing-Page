@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOMAKI ELECTRIC VEHICLE</title>
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./assets/scss/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -21,15 +24,26 @@
             <a href="">EASY RICKSHAW</a>
             <a href="">DEALERSHIP</a>
         </nav>
-        <a class="btn book-btn">BOOK NOW</a>
+        <div class="hamburger">
+            <i class="fas fa-bars bar"></i>
+            <i class="fas fa-times cross"></i>
+        </div>
     </header>
-    </nav>
-    <section class="main">
+    <div class="menu-item">
+        <div class="menu-list">
+            <a href="">HOME</a>
+            <a href="">SMART SCOOTERS</a>
+            <a href="">HI-SPEED SCOOTER</a>
+            <a href="">EASY RICKSHAW</a>
+            <a href="">DEALERSHIP</a>
+        </div>
+    </div>
+    <main class="main">
         <video muted autoplay>
             <source src="./assets/video/intro.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    </section>
+    </main>
     <div class="introduction">
         <h3>INTRODUCING MX-3, BORN WITH STYLE</h3>
         <p>The New MX-3 is Great to ride. Comfortable, Ultra smooth.</p>
@@ -124,6 +138,96 @@
             <a class="btn explore-btn">EXPLORE MORE</a>
         </div>
     </div>
+    <div class="news-section">
+        <h2>NEWS SECTION</h2>
+    </div>
+    <div class="owl-carousel owl-theme">
+        <div class="product-item">
+            <img src="./assets/image/owl1.jpg" alt="">
+            <h3>NEWS HEADING</h3>
+            <h3>⇔</h3>
+            <h3>NEWS CONTENT</h3>
+        </div>
+        <div class="product-item">
+            <img src="./assets/image/owl2.jpg" alt="">
+            <h3>NEWS HEADING</h3>
+            <h3>⇔</h3>
+            <h3>NEWS CONTENT</h3>
+        </div>
+        <div class="product-item">
+            <img src="./assets/image/owl3.jpg" alt="">
+            <h3>NEWS HEADING</h3>
+            <h3>⇔</h3>
+            <h3>NEWS CONTENT</h3>
+        </div>
+        <div class="product-item">
+            <img src="./assets/image/owl4.jpg" alt="">
+            <h3>NEWS HEADING</h3>
+            <h3>⇔</h3>
+            <h3>NEWS CONTENT</h3>
+        </div>
+        <div class="product-item">
+            <img src="./assets/image/owl5.jpg" alt="">
+            <h3>NEWS HEADING</h3>
+            <h3>⇔</h3>
+            <h3>NEWS CONTENT</h3>
+        </div>
+        <div class="product-item">
+            <img src="./assets/image/owl6.jpg" alt="">
+            <h3>NEWS HEADING</h3>
+            <h3>⇔</h3>
+            <h3>NEWS CONTENT</h3>
+        </div>
+    </div>
+    <footer class="footer">
+        <h4>Follow us on our social network</h4>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="links">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CAREER</a>
+            <a href="#">CONTACT</a>
+            <a href="#">PRIVACY POLICY</a>
+        </div>
+        <div class="copyright">
+            <p>© 2020 KLB KOMAKI PVT LTD - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: true
+                    },
+                    1000: {
+                        items: 4,
+                        nav: true
+                    }
+                }
+
+            });
+        });
+    </script>
+    <script src="./assets/js/app.js"></script>
 </body>
+
+
 
 </html>

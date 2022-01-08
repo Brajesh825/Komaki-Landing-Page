@@ -1,0 +1,43 @@
+.footer {
+  margin-top: -0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6c6c6c;
+
+  h4 {
+    padding: 1rem;
+    color: white;
+  }
+  a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.social {
+  padding: 1rem;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include breakpoint-down(small) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.copyright {
+  width: 100%;
+  padding-top: 0.25rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  p {
+    font-size: 13px;
+  }
+}
