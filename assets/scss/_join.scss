@@ -1,0 +1,72 @@
+.join {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50vh;
+  background-color: white;
+
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    height: 80vh;
+  }
+  &-us {
+    width: 30vw;
+    background: url("./../image/joinus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint-down(medium) {
+      width: 45vw;
+    }
+    @include breakpoint-down(small) {
+      width: 100vw;
+      height: 40vh;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: yellow;
+      padding: 1rem;
+      font-size: 2rem;
+    }
+    p {
+      padding: 0.5rem;
+      color: white;
+    }
+    a {
+      margin: 1rem;
+      background-color: yellow;
+      color: black;
+    }
+  }
+  .blogs {
+    width: 30vw;
+    background: url("./../image/currentsource.jpg");
+    background-position: 0;
+    background-repeat: no-repeat;
+    @include breakpoint-down(medium) {
+      width: 45vw;
+    }
+    @include breakpoint-down(small) {
+      width: 100vw;
+      height: 40vh;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      padding: 1rem;
+      font-size: 2rem;
+    }
+    p {
+      padding: 0.5rem;
+      color: black;
+    }
+    a {
+      margin: 1rem;
+      width: 10rem;
+    }
+  }
+}

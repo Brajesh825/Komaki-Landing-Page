@@ -290,4 +290,127 @@
 .product-item img {
   width: 100%;
 }
+
+.join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+  background-color: white;
+}
+
+@media (max-width: 39.9375em) {
+  .join {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 80vh;
+  }
+}
+
+.join-us {
+  width: 30vw;
+  background: url("./../image/joinus.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 63.9375em) {
+  .join-us {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .join-us {
+    width: 100vw;
+    height: 40vh;
+  }
+}
+
+.join-us h2 {
+  color: yellow;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.join-us p {
+  padding: 0.5rem;
+  color: white;
+}
+
+.join-us a {
+  margin: 1rem;
+  background-color: yellow;
+  color: black;
+}
+
+.join .blogs {
+  width: 30vw;
+  background: url("./../image/currentsource.jpg");
+  background-position: 0;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 63.9375em) {
+  .join .blogs {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .join .blogs {
+    width: 100vw;
+    height: 40vh;
+  }
+}
+
+.join .blogs h2 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.join .blogs p {
+  padding: 0.5rem;
+  color: black;
+}
+
+.join .blogs a {
+  margin: 1rem;
+  width: 10rem;
+}
 /*# sourceMappingURL=index.css.map */
