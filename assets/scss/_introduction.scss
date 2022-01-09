@@ -18,5 +18,9 @@
   }
   img {
     height: 50vh;
+    &:hover {
+      animation: rotateImg 6s infinite;
+      cursor: pointer;
+    }
   }
 }

@@ -1,3 +1,193 @@
+.fade {
+  opacity: 1;
+}
+
+@-webkit-keyframes rotateImg {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  25% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  50% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  75% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateImg {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  25% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  50% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  75% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes rotateBorder {
+  0% {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+  }
+  33% {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+  }
+  66% {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  100% {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+}
+
+@keyframes rotateBorder {
+  0% {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+  }
+  33% {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+  }
+  66% {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  100% {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+}
+
+@-webkit-keyframes productGlow {
+  0% {
+    width: 80%;
+    position: relative;
+    left: 5%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  33% {
+    width: 80%;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 5%;
+    bottom: 0%;
+    -webkit-transform: rotateX(120deg);
+            transform: rotateX(120deg);
+  }
+  66% {
+    width: 80%;
+    position: relative;
+    left: 0%;
+    right: 5%;
+    top: 0%;
+    bottom: 0%;
+    -webkit-transform: rotateX(240deg);
+            transform: rotateX(240deg);
+  }
+  100% {
+    width: 80%;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 5%;
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+@keyframes productGlow {
+  0% {
+    width: 80%;
+    position: relative;
+    left: 5%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  33% {
+    width: 80%;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 5%;
+    bottom: 0%;
+    -webkit-transform: rotateX(120deg);
+            transform: rotateX(120deg);
+  }
+  66% {
+    width: 80%;
+    position: relative;
+    left: 0%;
+    right: 5%;
+    top: 0%;
+    bottom: 0%;
+    -webkit-transform: rotateX(240deg);
+            transform: rotateX(240deg);
+  }
+  100% {
+    width: 80%;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 5%;
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +197,19 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .know-more-btn {
   background-color: black;
   color: white;
   border-radius: 1rem;
+}
+
+.know-more-btn:hover {
+  color: black;
+  background-color: white;
+  font-weight: 800;
 }
 
 .btn {
@@ -34,9 +231,14 @@ a {
 .explore-btn {
   color: white;
   background-color: black;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-radius: 1rem;
+}
+
+.explore-btn:hover {
+  color: black;
+  background-color: white;
+  -webkit-animation: rotateBorder 3s infinite;
+          animation: rotateBorder 3s infinite;
 }
 
 .header {
@@ -75,6 +277,10 @@ a {
   .navbar a {
     padding: 0.25rem;
   }
+}
+
+.navbar a:hover {
+  font-weight: 600;
 }
 
 @media (max-width: 39.9375em) {
@@ -190,6 +396,12 @@ a {
 
 .introduction img {
   height: 50vh;
+}
+
+.introduction img:hover {
+  -webkit-animation: rotateImg 6s infinite;
+          animation: rotateImg 6s infinite;
+  cursor: pointer;
 }
 
 .coming-soon {
@@ -334,6 +546,11 @@ a {
   }
 }
 
+.explore-img img:hover {
+  -webkit-animation: rotateImg 6s infinite;
+          animation: rotateImg 6s infinite;
+}
+
 .product-list {
   width: 60vw;
   margin: auto;
@@ -361,8 +578,26 @@ a {
   }
 }
 
+.product-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
 .product-item img {
   width: 100%;
+}
+
+.product-item:hover {
+  -webkit-animation: productGlow 3s infinite;
+          animation: productGlow 3s infinite;
 }
 
 .join {
@@ -515,11 +750,11 @@ a {
   left: 0;
 }
 
-.owl-carousel .product-item {
+.owl-carousel .news-item {
   background-color: pink;
 }
 
-.owl-carousel .product-item h3 {
+.owl-carousel .news-item h3 {
   text-align: center;
   padding: 0.5rem;
   margin: 0.5rem;

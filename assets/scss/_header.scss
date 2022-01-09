@@ -22,6 +22,9 @@
     @include breakpoint-down(medium) {
       padding: 0.25rem;
     }
+    &:hover {
+      font-weight: 600;
+    }
   }
   @include breakpoint-down(small) {
     display: none;

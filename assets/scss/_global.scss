@@ -5,11 +5,18 @@
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 .know-more-btn {
   background-color: black;
   color: white;
   border-radius: 1rem;
+
+  &:hover {
+    color: black;
+    background-color: white;
+    font-weight: 800;
+  }
 }
 
 .btn {
@@ -25,7 +32,11 @@ a {
 .explore-btn {
   color: white;
   background-color: black;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-radius: 1rem;
+
+  &:hover {
+    color: black;
+    background-color: white;
+    animation: rotateBorder 3s infinite;
+  }
 }
