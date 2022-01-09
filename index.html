@@ -51,28 +51,28 @@
         <h3>INTRODUCING MX-3, BORN WITH STYLE</h3>
         <p>The New MX-3 is Great to ride. Comfortable, Ultra smooth.</p>
         <p>Unbelievably nimble. Infinitely more refined. This is riding on an entirely new level.</p>
-        <img src="./assets/image/introduction.png" alt="">
+        <img src="./assets/image/introduction.png" class="fade" alt="">
         <a class="btn know-more-btn">Know more</a>
     </div>
     <div class="coming-soon">
-        <div class="coming-soon-top">
+        <div class="coming-soon-top fade">
             <img src="./assets/image/coming-soon-top.jpg" alt="coming soon">
         </div>
-        <div class="coming-soon-bottom">
+        <div class="coming-soon-bottom fade">
             <img src="./assets/image/coming-soon-bottom.jpeg" alt="coming-soon">
         </div>
     </div>
-    <div class="sports">
+    <div class="sports fade">
         <img src="./assets/image/sport.jpg" alt="sport">
     </div>
-    <div class="sports">
+    <div class="sports fade">
         <img src="./assets/image/sport2.jpg" alt="sport">
     </div>
-    <div class="sports">
+    <div class="sports fade">
         <img src="./assets/image/sports3.jpg" alt="sport">
     </div>
     <div class="explore">
-        <div class="explore-details">
+        <div class="explore-details fade">
             <div class="logo">
                 <img src="./assets/image/logo.png" alt="KOMAKI">
             </div>
@@ -85,104 +85,104 @@
             </p>
             <a class="btn explore-btn">Explore more</a>
         </div>
-        <div class="explore-img">
+        <div class="explore-img fade">
             <img src="./assets/image/konaki.png" alt="">
         </div>
     </div>
     <div class="product-list">
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/1.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/2.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/3.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/4.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/5.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/6.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/7.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/8.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/9.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/10.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/11.jpg" alt="">
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/1.jpg" alt="">
         </div>
     </div>
     <div class="join">
-        <div class="join-us">
+        <div class="join-us fade">
             <h2>WHY JOIN US?</h2>
             <p>FOR OVER 32 YEARS</p>
             <p>WE HAVE BEEN SERVING TO BUILD</p>
             <p>TO A BETTER WORLD</p>
             <a class="btn explore-btn">JOIN NOW</a>
         </div>
-        <div class="blogs">
+        <div class="blogs fade">
             <h2>BLOGS</h2>
             <p>EXPLORE NEW WAY OF LIFE!</p>
             <a class="btn explore-btn">EXPLORE MORE</a>
         </div>
     </div>
-    <div class="news-section">
+    <div class="news-section fade">
         <h2>NEWS SECTION</h2>
     </div>
-    <div class="owl-carousel owl-theme">
-        <div class="product-item">
+    <div class="owl-carousel owl-theme fade">
+        <div class="product-item fade">
             <img src="./assets/image/owl1.jpg" alt="">
             <h3>NEWS HEADING</h3>
             <h3>⇔</h3>
             <h3>NEWS CONTENT</h3>
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/owl2.jpg" alt="">
             <h3>NEWS HEADING</h3>
             <h3>⇔</h3>
             <h3>NEWS CONTENT</h3>
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/owl3.jpg" alt="">
             <h3>NEWS HEADING</h3>
             <h3>⇔</h3>
             <h3>NEWS CONTENT</h3>
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/owl4.jpg" alt="">
             <h3>NEWS HEADING</h3>
             <h3>⇔</h3>
             <h3>NEWS CONTENT</h3>
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/owl5.jpg" alt="">
             <h3>NEWS HEADING</h3>
             <h3>⇔</h3>
             <h3>NEWS CONTENT</h3>
         </div>
-        <div class="product-item">
+        <div class="product-item fade">
             <img src="./assets/image/owl6.jpg" alt="">
             <h3>NEWS HEADING</h3>
             <h3>⇔</h3>
             <h3>NEWS CONTENT</h3>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer fade">
         <h4>Follow us on our social network</h4>
         <div class="social">
             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -232,6 +232,24 @@
                 }
 
             });
+        });
+    </script>
+    <script>
+        $(window).on("load", function () {
+            $(window).scroll(function () {
+                var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+                $(".fade").each(function () {
+                    /* Check the location of each desired element */
+                    var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+                    /* If the element is completely within bounds of the window, fade it in */
+                    if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                        if ($(this).css("opacity") == 0) { $(this).fadeTo(500, 1); }
+                    } else { //object goes out of view (scrolling up)
+                        if ($(this).css("opacity") == 1) { $(this).fadeTo(500, 0); }
+                    }
+                });
+            }).scroll(); //invoke scroll-handler on page-load
         });
     </script>
     <script src="./assets/js/app.js"></script>
