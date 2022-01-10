@@ -42,37 +42,23 @@
   0% {
     width: 80%;
     position: relative;
-    left: 5%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+
     transform: rotateX(0deg);
   }
   33% {
     width: 80%;
     position: relative;
-    left: 0%;
-    right: 0%;
-    top: 5%;
-    bottom: 0%;
+
     transform: rotateX(120deg);
   }
   66% {
     width: 80%;
     position: relative;
-    left: 0%;
-    right: 5%;
-    top: 0%;
-    bottom: 0%;
     transform: rotateX(240deg);
   }
   100% {
     width: 80%;
     position: relative;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 5%;
     transform: rotateX(360deg);
   }
 }
