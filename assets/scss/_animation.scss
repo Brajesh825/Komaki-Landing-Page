@@ -40,25 +40,15 @@
 
 @keyframes productGlow {
   0% {
-    width: 80%;
-    position: relative;
-
     transform: rotateX(0deg);
   }
   33% {
-    width: 80%;
-    position: relative;
-
     transform: rotateX(120deg);
   }
   66% {
-    width: 80%;
-    position: relative;
     transform: rotateX(240deg);
   }
   100% {
-    width: 80%;
-    position: relative;
     transform: rotateX(360deg);
   }
 }
