@@ -4,47 +4,23 @@
 
 @-webkit-keyframes rotateImg {
   0% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
-  }
-  25% {
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
-  }
-  50% {
-    -webkit-transform: rotateX(360deg);
-            transform: rotateX(360deg);
-  }
-  75% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotateImg {
   0% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
-  }
-  25% {
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
-  }
-  50% {
-    -webkit-transform: rotateX(360deg);
-            transform: rotateX(360deg);
-  }
-  75% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -399,8 +375,8 @@ a {
 }
 
 .introduction img:hover {
-  -webkit-animation: rotateImg 6s infinite;
-          animation: rotateImg 6s infinite;
+  -webkit-animation: rotateImg 4s;
+          animation: rotateImg 4s;
   cursor: pointer;
 }
 
@@ -547,13 +523,14 @@ a {
 }
 
 .explore-img img:hover {
-  -webkit-animation: rotateImg 6s infinite;
-          animation: rotateImg 6s infinite;
+  -webkit-animation: rotateImg 4s;
+          animation: rotateImg 4s;
 }
 
 .product-list {
   width: 60vw;
   margin: auto;
+  margin-bottom: 1rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
